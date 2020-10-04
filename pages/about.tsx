@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Layout from '../components/Layout/Layout';
 import { siteTitle } from '../constants'
 
-export default function HomePage() {
+export default function About() {
   return (
     <Layout>
       <Head>

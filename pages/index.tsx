@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Layout from '../components/Layout/Layout'
 import { siteTitle } from '../constants'
 
-const HomePage: React.FunctionComponent = () => {
+export default function HomePage() {
   return (
     <Layout>
       <Head>
@@ -14,6 +14,4 @@ const HomePage: React.FunctionComponent = () => {
       </section>
     </Layout>
   )
-}
-
-export default HomePage
+};
