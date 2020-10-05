@@ -1,7 +1,17 @@
+import styled from 'styled-components';
+
+const StyledNavbar = styled.div`
+  background: #03a4fc;
+`;
+
 export default function Navbar() {
   return (
     <>
-      <nav>This should be a navbar</nav>
+      <nav>
+        <StyledNavbar>
+          Navbar Content
+        </StyledNavbar>
+      </nav>
     </>
   )
-}
+};
