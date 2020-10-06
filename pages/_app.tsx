@@ -4,6 +4,12 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
+    font-family: Roboto;
+  }
+
+  * {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
   }
 `;
