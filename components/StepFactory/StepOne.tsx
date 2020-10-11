@@ -1,4 +1,4 @@
-function StepOne () {
+const StepOne: React.FC = () => {
   return (
     <>
       Step One

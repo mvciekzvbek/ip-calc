@@ -17,7 +17,7 @@ const StyledNavbar = styled.div`
   }
 `;
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   return (
     <StyledNavbar>
       <div className="logo">

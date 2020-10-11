@@ -1,6 +1,5 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import StepFactory from '../../components/StepFactory';
 import Calculator from '../../components/Calculator/Calculator';
 import {decrementStep, incrementStep} from './actions';
 

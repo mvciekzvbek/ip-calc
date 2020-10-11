@@ -1,6 +1,6 @@
 import * as React from "react";
 import Head from 'next/head'
-import Layout from '../components/Layout/Layout'
+import Layout from '../components/Layout'
 import { siteTitle } from '../constants'
 import styled from 'styled-components';
 import CalculatorContainer from "~/containers/CalculatorContainer";
@@ -12,7 +12,7 @@ const StyledHomePage = styled.div`
   justify-content: center;
 `;
 
-export default function HomePage() {
+const HomePage: React.FC = () => {
   return (
     <Layout>
       <Head>
@@ -26,3 +26,5 @@ export default function HomePage() {
     </Layout>
   )
 };
+
+export default HomePage;

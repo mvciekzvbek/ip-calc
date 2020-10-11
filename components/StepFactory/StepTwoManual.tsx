@@ -1,4 +1,4 @@
-function StepTwoManual () {
+const StepTwoManual: React.FC = () => {
   return (
     <>
       Step Two Manual

@@ -1,4 +1,4 @@
-function ResultManual () {
+const ResultManual: React.FC = () => {
     return (
       <>
         Result Manual
@@ -6,4 +6,4 @@ function ResultManual () {
     )
   };
   
-  export default ResultManual;
+export default ResultManual;

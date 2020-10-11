@@ -1,3 +1,4 @@
+import { AppProps } from 'next/app'
 import { createGlobalStyle } from 'styled-components'
 import { wrapper } from '../store'
 
@@ -15,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-function App({ Component, pageProps }) {
+function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <GlobalStyle />

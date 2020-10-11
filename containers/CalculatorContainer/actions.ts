@@ -1,17 +1,24 @@
 import {
-   INCREMENT_STEP,
-   DECREMENT_STEP 
+  INCREMENT_STEP,
+  DECREMENT_STEP 
 } from './actionTypes'
 
-export const incrementStep = () => {
-   console.log('increment');
-   return {
-      type: INCREMENT_STEP
-   }
+export interface StepActionType {
+  type: string
+  payload?: any
+}
+
+export interface StepActionCreator {
+  (): StepActionType;
+}
+
+export const incrementStep: StepActionCreator = () => {
+  return {
+    type: INCREMENT_STEP
+  }
 };
 
-export const decrementStep = () => {
-   console.log('decrement');
+export const decrementStep: StepActionCreator = () => {
    return {
       type: DECREMENT_STEP
    }

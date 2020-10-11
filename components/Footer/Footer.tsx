@@ -27,7 +27,7 @@ const StyledFooter = styled.footer`
   }
 `;
 
-export default function Footer() {
+const Footer: React.FC = () => {
   return (
     <StyledFooter>
       <div className='footer__author'>
@@ -41,3 +41,5 @@ export default function Footer() {
     </StyledFooter>
   )
 };
+
+export default Footer;

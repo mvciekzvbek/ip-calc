@@ -1,6 +1,10 @@
 import * as React from "react";
 import styled from 'styled-components';
-import Link from 'next/link'
+import Link from 'next/link';
+
+type LeftNavProps = {
+  open: boolean
+}
 
 const StyledList = styled.ul`
   list-style: none;
@@ -38,7 +42,7 @@ const StyledLink = styled.a`
   text-decoration: none;
 `
 
-const LeftNav = ({ open }) => {
+const LeftNav: React.FC<LeftNavProps> = ({ open }) => {
   return (
     <StyledList open={open}>
       <li>

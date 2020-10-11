@@ -1,7 +1,7 @@
-function StepTwoAuto () {
+const StepTwoAuto: React.FC = () => {
   return (
     <>
-      Step Two Auto
+      Step Two
     </>
   )
 };

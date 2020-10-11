@@ -1,4 +1,4 @@
-function ResultAuto () {
+const ResultAuto: React.FC = () => {
     return (
       <>
         Result Auto

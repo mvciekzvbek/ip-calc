@@ -1,8 +1,14 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import StepsFactory from '../StepFactory';
-import classNames from 'classnames';
+import { StepActionCreator } from '../../containers/CalculatorContainer/actions';
 
+type CalculatorProps = {
+  step: number,
+  mode: string,
+  decrementStep: StepActionCreator,
+  incrementStep: StepActionCreator
+};
 
 const StyledCalculator = styled.div`
     width: 50vw;
@@ -22,7 +28,7 @@ const StyledButtonsWrapper = styled.div`
   bottom: 10px;
 `;
 
-export default function Calculator(props) {
+const Calculator: React.FC<CalculatorProps> = (props) => {
   return (
     <StyledCalculator>
         <StepsFactory {...props} />
@@ -33,3 +39,5 @@ export default function Calculator(props) {
     </StyledCalculator>
   )
 };
+
+export default Calculator;
