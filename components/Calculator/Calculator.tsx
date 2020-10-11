@@ -33,8 +33,8 @@ const Calculator: React.FC<CalculatorProps> = (props) => {
     <StyledCalculator>
         <StepsFactory {...props} />
         <StyledButtonsWrapper>
-          <button onClick={props.decrementStep}>Decrement</button>
-          <button onClick={props.incrementStep}>Increment</button>
+          <button onClick={props.decrementStep}>Previous</button>
+          <button onClick={props.incrementStep}>Next</button>
         </StyledButtonsWrapper>
     </StyledCalculator>
   )
