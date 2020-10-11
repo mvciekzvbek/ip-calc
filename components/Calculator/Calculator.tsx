@@ -2,13 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 import StepsFactory from '../StepFactory';
 import { StepActionCreator } from '../../containers/CalculatorContainer/actions';
-
-type CalculatorProps = {
-  step: number,
-  mode: string,
-  decrementStep: StepActionCreator,
-  incrementStep: StepActionCreator
-};
+import { CalculatorProps } from '../../types';
 
 const StyledCalculator = styled.div`
     width: 50vw;

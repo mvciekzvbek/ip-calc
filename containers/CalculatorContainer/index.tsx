@@ -2,16 +2,19 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Calculator from '../../components/Calculator/Calculator';
 import { decrementStep, incrementStep } from './actions';
-import { stepSelector } from './selectors'
+import { CalculatorProps } from '../../types'
+import { stepSelector, modeSelector } from './selectors'
 
-function CalculatorContainer (props) {
+
+const CalculatorContainer: React.FC<CalculatorProps> = (props) => {
   return (
     <Calculator {...props} />
   );
 }
 
 const mapStateToProps = state => ({
-    step: stepSelector(state)
+    step: stepSelector(state),
+    mode: modeSelector(state)
 });
 
 const mapDispatchToProps = {
