@@ -39,7 +39,7 @@ const StyledHamburger = styled.div`
   }
 `;
 
-const Burger = () => {
+const Hamburger: React.FC = () => {
   const [open, setOpen] = useState(false)
 
   return (
@@ -54,4 +54,4 @@ const Burger = () => {
   )
 };
 
-export default Burger;
+export default Hamburger;

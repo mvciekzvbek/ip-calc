@@ -3,11 +3,11 @@ import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 import { siteTitle } from "../../constants";
 
-export default function Layout({
-  children,
-}: {
-    children: React.ReactNode
-  }) {
+type LayoutProps = {
+  children: React.ReactNode
+}
+
+const Layout: React.FC<LayoutProps> = ({children}) => {
   return (
     <>
       <Head>
@@ -22,3 +22,5 @@ export default function Layout({
     </>
   )
 };
+
+export default Layout;

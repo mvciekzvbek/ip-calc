@@ -1,9 +1,9 @@
 import * as React from 'react';
 import Head from 'next/head';
-import Layout from '../components/Layout/Layout';
+import Layout from '../components/Layout';
 import { siteTitle } from '../constants'
 
-export default function About() {
+const About: React.FC = () => {
   return (
     <Layout>
       <Head>
@@ -15,3 +15,5 @@ export default function About() {
     </Layout>
   )
 };
+
+export default About;

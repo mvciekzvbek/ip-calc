@@ -1,4 +1,6 @@
-import { createGlobalStyle, ThemeProvider } from 'styled-components'
+import { AppProps } from 'next/app'
+import { createGlobalStyle } from 'styled-components'
+import { wrapper } from '../store'
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -14,19 +16,13 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const theme = {
-  colors: {
-    primary: '#0070f3',
-  }
-}
-
-export default function App({ Component, pageProps }) {
+function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <GlobalStyle />
-      <ThemeProvider theme={theme}>
-        <Component {...pageProps} />
-      </ThemeProvider>
+      <Component {...pageProps} />
     </>
   )
 };
+
+export default wrapper.withRedux(App)
